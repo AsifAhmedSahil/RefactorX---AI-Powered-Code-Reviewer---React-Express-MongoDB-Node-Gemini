@@ -3,6 +3,8 @@ const router = require("./routes/ai.route")
 
  const app = express()
 
+ app.use(express.json())
+
 app.get("/",(req,res)=>{
     res.send("welcome to RefactorX")
 
