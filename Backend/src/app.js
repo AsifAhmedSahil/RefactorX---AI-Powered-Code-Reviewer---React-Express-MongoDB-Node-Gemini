@@ -1,5 +1,5 @@
 const express = require("express")
-const router = require("./routes/ai.route")
+const aiRoute = require("./routes/ai.route")
 
  const app = express()
 
@@ -10,6 +10,6 @@ app.get("/",(req,res)=>{
 
 })
 
-app.use("/ai",router)
+app.use("/ai",aiRoute)
 
 module.exports = app
